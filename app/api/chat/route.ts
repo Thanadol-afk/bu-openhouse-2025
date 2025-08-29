@@ -5,17 +5,17 @@ type Msg = { role: "user" | "assistant"; content: string };
 
 // User data for personalized responses
 const userData = {
-  name: "",
-  fullName: "",
-  role: "",
+  name: "ธนดล",
+  fullName: "ธนดล วงษาโคตร",
+  role: "นักเรียน",
   skills: [
     " ", " ", " ", " ", " ", 
   ],
   education: [
     {
-      school: " ",
-      degree: " ",
-      period: " ",
+      school: "โรงเรียนเตรียมอุดมศึกษา ภาคตะวันออกเฉียงเหนือ",
+      degree: "6",
+      period: "1",
       description: " "
     },
   ],
@@ -27,8 +27,8 @@ const userData = {
     " "
   ],
   contact: {
-    email: "your.email@example.com",
-    phone: "+66 XX XXX XXXX",
+    email: "thanadolvongsakhote@gmail.com",
+    phone: "+66 0629833248",
     website: " ",
     github: " ",
     linkedin: " "
@@ -36,7 +36,7 @@ const userData = {
 };
 
 // System prompt for the AI assistant
-const systemPrompt = ` Your Name is "Shiro" , You are my personal AI assistant representing their professional portfolio. 
+const systemPrompt = ` Your Name is "Newbie" , You are my personal AI assistant representing their professional portfolio. 
 
 ABOUT ME:
 - Name: ${userData.fullName}
