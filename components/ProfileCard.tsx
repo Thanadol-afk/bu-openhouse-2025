@@ -17,7 +17,6 @@ const ProfileCard: React.FC = () => {
             ),
             color: 'text-red-400 hover:text-red-300'
         },
-        //TODO: Add more social links here
         {
             name: 'Facebook',
             href: 'https://facebook.com/ThanadolVongsakhote',
@@ -36,8 +35,14 @@ const ProfileCard: React.FC = () => {
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -inset-10 opacity-30">
                     <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-                    <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-                    <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+                    <div
+                        className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"
+                        style={{ animationDelay: '2s' }}
+                    ></div>
+                    <div
+                        className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"
+                        style={{ animationDelay: '4s' }}
+                    ></div>
                 </div>
             </div>
 
@@ -49,10 +54,9 @@ const ProfileCard: React.FC = () => {
                     <div className="mb-4">
                         {/* Avatar */}
                         <div className="w-36 h-36 mx-auto mb-2 relative">
-                            {/* //TODO: Replace with actual profile picture */}
                             <Image
                                 src="/1.jpg"
-                                alt="Profile"
+                                alt="Thanadol Vongsakhote profile picture"
                                 fill
                                 className="rounded-full object-cover"
                             />
@@ -60,7 +64,6 @@ const ProfileCard: React.FC = () => {
                         </div>
 
                         {/* Name and Title */}
-                        {/* //TODO: Replace with actual name and title */}
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
                             Thanadol Vongsakhote
                         </h1>
@@ -69,7 +72,6 @@ const ProfileCard: React.FC = () => {
                         </div>
 
                         {/* Contact Information */}
-                        {/* //TODO: Replace with actual contact information */}
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
                             <div className="flex items-center space-x-2">
                                 <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center">
@@ -97,7 +99,6 @@ const ProfileCard: React.FC = () => {
                     </div>
 
                     {/* About Section */}
-                    {/* //TODO: Replace with actual bio */}
                     <div className="max-w-xl mb-2">
                         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                             This is my project for Test skills in M.6/1 XD
@@ -105,7 +106,6 @@ const ProfileCard: React.FC = () => {
                     </div>
 
                     {/* Social Links */}
-                    {/* //TODO: Add more social links here */}
                     <div className="space-y-2 mb-4">
                         <h3 className="text-lg font-semibold text-white">Connect With Me</h3>
                         <div className="flex justify-center space-x-3">
